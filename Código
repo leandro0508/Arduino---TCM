@@ -1,0 +1,181 @@
+int BT2 = 2;
+int BT1 = 3;
+int RELE = 4;
+int BUZZER = 5;
+int SEGG = 6;
+int SEGE = 7;
+int SEGD = 8;
+int SEGB = 9;
+int led = 11;
+int led2 = 12;
+const int a = 440;
+const int sir = 10;
+
+
+
+void setup(){
+
+  pinMode(BT2, OUTPUT);
+  pinMode(BT1, OUTPUT);
+  pinMode(RELE, OUTPUT);
+  pinMode(BUZZER, OUTPUT);
+  pinMode(SEGG, OUTPUT);
+  pinMode(SEGE, OUTPUT);
+  pinMode(SEGD, OUTPUT);
+  pinMode(SEGB, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(sir, OUTPUT);
+ 
+}
+ 
+void loop() {
+  
+  digitalWrite(BT2, HIGH); //9
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, LOW);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+    digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, LOW);  //8
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, LOW);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+  	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, HIGH); //7
+  digitalWrite(BT1, HIGH);
+  digitalWrite(RELE, HIGH);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, HIGH);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+  	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW); 
+  
+delay(1000);
+  digitalWrite(BT2, LOW);  //6
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, LOW);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, HIGH);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+  	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, HIGH);  //5
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, LOW);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, HIGH);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, HIGH);  //4
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, LOW);
+  digitalWrite(BUZZER, HIGH);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, HIGH);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+    digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, HIGH); //3
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, HIGH);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+    digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, LOW);  //2
+  digitalWrite(BT1, LOW);
+  digitalWrite(RELE, HIGH);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, HIGH);
+  digitalWrite(SEGB, LOW);
+  
+  	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, HIGH);  //1
+  digitalWrite(BT1, HIGH);
+  digitalWrite(RELE, HIGH);
+  digitalWrite(BUZZER, HIGH);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, HIGH);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, HIGH);
+  
+  	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1000);
+  digitalWrite(BT2, LOW);  //0
+  digitalWrite(BT1, HIGH);
+  digitalWrite(RELE, LOW);
+  digitalWrite(BUZZER, LOW);
+  digitalWrite(SEGG, LOW);
+  digitalWrite(SEGE, LOW);
+  digitalWrite(SEGD, LOW);
+  digitalWrite(SEGB, LOW);
+  
+  	digitalWrite(12, HIGH);
+  delay(1000);
+    digitalWrite(12, LOW);
+  
+delay(1500);
+  
+  tone(sir, a, 440);
+    delay(2500);
+  
+  	digitalWrite(11, HIGH);
+  delay(3000);
+  	digitalWrite(11, LOW);
+}
